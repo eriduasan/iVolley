@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="highlight_title">
+        <item name="android:textColor">@color/secundary_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="loginInputText">
+        <item name="android:background">#F00</item>
+    </style>
+</resources>

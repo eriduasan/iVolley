@@ -1,5 +1,32 @@
 <resources>
     <string name="app_name">Hello Volleyball</string>
-    <string name="tv_header_title">iVolley!</string>
+    <string name="tv_header_title">iVolley</string>
     <string name="login">Login</string>
+    <string name="activityMain_login">Login</string>
+    <string name="activityMain_About">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales eros turpis, et rhoncus enim tempor quis. Duis vulputate fermentum mi, convallis condimentum tortor commodo porta. Morbi tincidunt ipsum tincidunt est maximus blandit. Quisque ornare sapien dolor, at elementum quam feugiat sit amet. Ut laoreet condimentum eros sit amet consequat. Fusce quis tortor pretium, sodales tellus et, mollis nunc. Duis ut mollis sem. Vestibulum a maximus nunc. Etiam volutpat non purus sed molestie. Cras imperdiet, enim a iaculis malesuada, orci purus convallis felis, vel cursus tortor ipsum a quam.
+        Proin quis nibh ac risus auctor fringilla. Vestibulum lobortis magna sagittis sapien elementum eleifend nec nec augue. Quisque metus lorem, tincidunt id dictum id, sagittis quis velit. Ut sit amet massa eget diam ultricies auctor eget et nisi. Mauris faucibus nisi et orci accumsan porta. Donec gravida nec nisl a faucibus. Phasellus sit amet varius sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut consequat ligula. Fusce sollicitudin, ipsum quis varius mollis, felis nisl semper orci, non feugiat augue dui a nisl.
+        Curabitur felis orci, tristique non elit non, aliquet dapibus tellus. Duis blandit convallis suscipit. Aenean laoreet nisi sed ornare porttitor. Morbi congue, nisi at porta porta, mi tellus mattis purus, eget viverra diam eros a leo. Maecenas in sem ut nisi volutpat maximus nec non nunc. Mauris venenatis urna sem, sit amet volutpat velit gravida quis. Sed vel mauris et dui aliquet pretium. Quisque suscipit vestibulum arcu, id facilisis tortor porta at. Curabitur vitae eros tincidunt, volutpat risus eget, sollicitudin massa. Suspendisse aliquam erat mauris, eu auctor libero finibus sit amet. Ut ultricies lacus ut lectus tincidunt consequat. Vivamus non diam mi. Maecenas consectetur tristique dolor, gravida finibus ante pellentesque sed. Phasellus vitae justo diam. Fusce venenatis non velit eget blandit. Proin consequat feugiat est.
+        Vivamus risus lorem, suscipit et posuere eget, accumsan sodales ipsum. Sed mollis nisl tellus, a gravida sem rhoncus eu. Nunc molestie elementum sem. Donec sollicitudin, velit quis hendrerit euismod, ipsum nisi laoreet ex, eget vehicula orci lacus non leo. Duis blandit ex in molestie tristique. Vivamus vel luctus mi. Etiam vehicula quam tortor, ut dictum purus porta at. Suspendisse sed sem elementum, faucibus eros et, porttitor erat. Mauris sed tellus id est luctus commodo id non metus. Fusce odio mi, imperdiet eget tempus vel, rutrum eget elit. Nullam magna diam, consequat quis eleifend ut, ultrices at mi.
+        Nullam pulvinar sapien mauris, ut fermentum metus volutpat in. Donec non metus pellentesque, efficitur arcu sagittis, consequat neque. Phasellus massa ipsum, sodales laoreet vehicula sit amet, euismod vitae sapien. Vestibulum cursus, sapien eget auctor fermentum, augue magna euismod augue, sit amet pretium risus orci vestibulum ex. Nulla vitae quam sit amet ante ultrices posuere ut id metus. Etiam vitae velit ultrices metus aliquam finibus eget quis erat. Duis faucibus mauris ut hendrerit ullamcorper. Nullam egestas at lacus id vulputate. Aenean lobortis vel odio sed congue.
+    </string>
+    <string name="about_title">About</string>
+    <string name="about_info_1">
+        iVolley is an app that will get you general tips, advices and information about the world of volleyball.
+        \n\n
+        It has two main sections. The first one talks about the rules of Volleyball, along with the freqüent asked questions.
+        \n\n
+        The second one shows the top ranking teams on the VNL (Volleyball Nation League).
+    </string>
+    <string name="about_info_2">
+        The FIVB Volleyball Men\'s Nations League is an annual international volleyball competition contested by
+        the senior men\'s national teams of the members of the International Volleyball Federation
+    </string>
+    <string name="about_go_back">Go back</string>
+    <string name="login_mainTitle">Login</string>
+    <string name="login_btn_login">Log in</string>
+    <string name="login_failed_msg">Login failed. Wrong username or password.</string>
 </resources>
