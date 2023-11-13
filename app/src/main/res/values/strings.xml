@@ -18,8 +18,7 @@
         iVolley is an app that will get you general tips, advices and information about the world of volleyball.
         \n\n
         It has two main sections. The first one talks about the rules of Volleyball, along with the freqüent asked questions.
-        \n\n
-        The second one shows the top ranking teams on the VNL (Volleyball Nation League).
+        \n\nThe second one shows the top ranking teams on the VNL (Volleyball Nation League).
     </string>
     <string name="about_info_2">
         The FIVB Volleyball Men\'s Nations League is an annual international volleyball competition contested by
@@ -29,4 +28,5 @@
     <string name="login_mainTitle">Login</string>
     <string name="login_btn_login">Log in</string>
     <string name="login_failed_msg">Login failed. Wrong username or password.</string>
+    <string name="menu_settings">Settings</string>
 </resources>

@@ -17,13 +17,14 @@
     <style name="Theme.CustomVolleyball" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primary_color</item>
-        <item name="android:windowBackground">@color/white</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/primary_color_variant</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+
+
         <!-- Secondary brand color. -->
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
 </resources>
