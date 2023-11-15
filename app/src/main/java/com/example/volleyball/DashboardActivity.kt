@@ -20,6 +20,8 @@ class DashboardActivity : AppCompatActivity() {
 
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
+        setTitle(R.string.dashboard_toolbar_name)
+
 
     }
 
