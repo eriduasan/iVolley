@@ -4,6 +4,12 @@
         <item name="android:textColor">@color/secundary_color</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="btn_background_green">
+        <item name="android:backgroundTint">@color/success_color</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
     <style name="loginInputText">
         <item name="android:background">#F00</item>
     </style>

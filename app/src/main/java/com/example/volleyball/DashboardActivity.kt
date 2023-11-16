@@ -17,6 +17,7 @@ import com.example.volleyball.clases.Faq
 import com.example.volleyball.databinding.ActivityDashboardBinding
 import com.example.volleyball.fragments.DetailFaqFragment
 import com.example.volleyball.fragments.FaqFragment
+import com.example.volleyball.fragments.OptionsFragment
 import com.example.volleyball.fragments.RulesFragment
 import com.google.android.material.navigation.NavigationBarView
 
@@ -55,6 +56,18 @@ class DashboardActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedL
             }
             else -> false
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        return when(item.itemId) {
+            R.id.menu_btn_options -> {
+                changeFragment(OptionsFragment(), true)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+
     }
 
     fun changeFragment(fragmentToShow: Fragment, add: Boolean) {

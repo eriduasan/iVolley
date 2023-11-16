@@ -96,5 +96,7 @@
         5. Libero: Specializes in defensive skills and wears a different-colored jersey.
     </string>
     <string name="faq_title">Common questions about Volleyball</string>
+    <string name="options_changePwd">Allow notifications</string>
+    <string name="permission_already_granted">Permission already granted</string>
 
 </resources>
