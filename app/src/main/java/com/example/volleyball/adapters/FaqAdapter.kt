@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.volleyball.R
 import com.example.volleyball.clases.Faq
 
-class FaqAdapter(private val faqList: MutableList<Faq>, private val context: Context): RecyclerView.Adapter<FaqAdapter.FaqViewHolder>() {
+class FaqAdapter(private val faqList: MutableList<Faq>, private val context: Context, private val onClick: (Faq) -> Unit?): RecyclerView.Adapter<FaqAdapter.FaqViewHolder>() {
 
     class FaqViewHolder(view: View): RecyclerView.ViewHolder(view) {
         private val tvFaqTitle: TextView = view.findViewById(R.id.faq_item_title)
@@ -33,6 +33,7 @@ class FaqAdapter(private val faqList: MutableList<Faq>, private val context: Con
 
     override fun onBindViewHolder(holder: FaqViewHolder, position: Int) {
         holder.bindItem(faqList[position])
+        holder.itemView.setOnClickListener{ onClick(faqList[position]) }
     }
 
 }

@@ -7,15 +7,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
+import com.example.volleyball.clases.Faq
 import com.example.volleyball.databinding.ActivityDashboardBinding
+import com.example.volleyball.fragments.DetailFaqFragment
 import com.example.volleyball.fragments.FaqFragment
 import com.example.volleyball.fragments.RulesFragment
 import com.google.android.material.navigation.NavigationBarView
 
-class DashboardActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
+class DashboardActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener, FaqFragment.onFaqFragmentItemClicked {
 
     lateinit var binding: ActivityDashboardBinding
 
@@ -60,6 +65,21 @@ class DashboardActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedL
             setReorderingAllowed(true)
             replace(fragmentContainerView, fragmentToShow)
             if (add) addToBackStack(null)
+        }
+    }
+
+    override fun clickFaqItem(faq: Faq) {
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+
+            replace<DetailFaqFragment>(
+                binding.dashboardFragmentContainerView.id,
+                args = bundleOf(
+                    DetailFaqFragment.DETAIL_FAQ_TITLE to faq.title,
+                    DetailFaqFragment.DETAIL_FAQ_BODY to faq.body
+                ))
+
+            addToBackStack(null)
         }
     }
 }
