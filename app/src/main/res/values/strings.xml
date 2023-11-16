@@ -33,8 +33,68 @@
     <string name="faq">FAQ</string>
     <string name="ranking">Ranking</string>
     <string name="dashboard_toolbar_name">Dashboard</string>
+
+    <!-- Volleyball Rules -->
     <string name="rules_volleyball_1">Only 6 players on the floor at any given time: 3 in the front row and 3 in the back row.\n\nPoints are made on every serve for the winning team of the rally (rally-point scoring).\n\nPlayers may not hit the ball twice in succession (a block is not considered a hit).\n\nBall may be played off the net during a volley and on a serve.\n\nA ball hitting a boundary line is in.\n\nA ball is out if it hits an antennae, the floor completely outside the court, any of the net or cables outside the antennae, the referee stand or pole, or the ceiling above a non-playable area.\n\nIt is legal to contact the ball with any part of a player’s body.\n\nIt is illegal to catch, hold or throw the ball.\n\nA player cannot block or attack a serve from on or inside the 10-foot line.\n\nAfter the serve, front-line players may switch positions at the net.\n\nMatches are made up of sets; the number depends on the level of play.</string>
     <string name="rules_title">Volleyball rules</string>
     <string name="rules_violation_title">Volleyball rule violations</string>
     <string name="rules_volleyball_2">Stepping on or across the service line when serving while making contact with the ball.\n\nFailure to serve the ball over the net successfully.\n\nBall-handling errors and contacting the ball illegally (double touching, lifting, carrying, throwing, etc.)\\n\\nTouching the net with any part of the body while the ball is in play.\n\nBlocking a ball coming from the opponent’s court and contacting the ball when reaching over the net if your opponent has not used 3 contacts AND has a player there to make a play on the ball.\n\nAttacking a ball coming from the opponent’s court and contacting the ball when reaching over the net when the ball has not yet broken the vertical plane of the net.\n\nCrossing the court centerline with any part of your body, with the exception of a hand or foot. It is only considered a violation if the entire hand or entire foot crosses the court centerline.\n\nServing out of rotation or out of order.\n\nBack row player blocking (deflecting a ball coming from the opponent) when, at the moment of contact, the back row player is near the net and has part of their body above the top of the net. This is an illegal block.\n\nBack row player attacking a ball inside the front zone (the area inside the 3M/10-foot line) when, at the moment of contact, the ball is completely above the net. This is an illegal attack.</string>
+
+    <!-- Volleyball FAQ -->
+
+    <string name="faq_volleyball_scoring_title">How Do You Score In Volleyball?</string>
+    <string name="faq_volleyball_scoring_body">
+        The overall objective of volleyball is for each athlete to use skill involving teams passing a ball over the net without the ball touching the ground or going out of bounds. A ball dropping on the line counts as in bounds.
+        \n\n
+        There are a lot of different plays that are used in order to return the ball over the net, including: a pass, set or a hit, which can be very exciting in playing the sport but also in watching teams play as well.
+        \n\n
+        Teams earn points when their opponent errors, or fails to legally return the ball over the net. The team earning the most points in a volleyball game wins. Each game or another team that can be used is a set, a set is played to 25 points and there are usually 3-5 sets within each match depending on the level, where different rules are applied.
+    </string>
+
+    <string name="faq_what_to_wear_title">What Do You Wear To Play Volleyball?</string>
+    <string name="faq_what_to_wear_body">
+        Figuring out what to wear depends on whether you are playing indoor or outdoor, and competitively or for fun.
+        \n\n
+        Indoor volleyball practice calls for a t-shirt, athletic shorts, socks, court shoes, and knee pads. Your formal game gear will include a jersey, shorts, socks, shoes, and knee pads.
+        \n\n
+        Beach volleyball players wear swimsuits, sports bikinis, spandex tops and bottoms, full body suits, or shorts and tank-tops, depending on what their league allows it or not.
+    </string>
+
+    <string name="faq_libero_title">What Is A Libero?</string>
+    <string name="faq_libero_body">
+        The word \‘Libero\' is an Italian word meaning "free". As in football, soccer, and other sports, indoor volleyball uses defensive specialists called liberos.
+        \n\n
+        Two liberos may be chosen from a team of twelve or more players, but only one "acting libero" can be on the court at a time. Not every team has to have a libero, though. According to FIVB rules, teams have the option to designate up to two liberos for a tournament from among the list of players.
+    </string>
+
+    <string name="faq_libero_color_title">Which Player In Volleyball Wears A Different Color?</string>
+    <string name="faq_libero_color_body">
+        Volleyball liberos wear different colored jerseys to have them stand out from their teammates.
+    </string>
+
+    <string name="faq_libero_diff_title">How Is A Libero Different Than Other Volleyball Players?</string>
+    <string name="faq_libero_diff_body">
+        Liberos follow a little different set of rules. The libero was added to the indoor volleyball game in 1999 to liven up the game. The main differences between the libero and a defense specialist involve duties and substitution.
+        \n\n
+        The Libero can only rotate in for back-row players, wears a different color of jersey, can only serve for one player, cannot jump or attack, must sit out one play before returning to the game and when used as a substitute it doesn’t count against the team’s six substitutions per set that are allowed.
+        \n\n
+        A defensive specialist, on the other hand, can rotate in for any player, they are allowed to jump and attack a hit and when they are used as a substitute it does count against the team’s six allowed substitutions per set.
+    </string>
+
+    <string name="faq_volleyball_positions_title">What Are the Different Positions in Volleyball?</string>
+    <string name="faq_volleyball_positions_body">
+        Volleyball has several key positions, each with its own responsibilities. The main positions include:
+        \n\n
+        1. Setter: Sets the ball for attackers.
+        \n\n
+        2. Outside Hitter: Attacks from the left side of the court.
+        \n\n
+        3. Middle Blocker: Blocks at the net and attacks from the center.
+        \n\n
+        4. Opposite Hitter: Attacks from the right side.
+        \n\n
+        5. Libero: Specializes in defensive skills and wears a different-colored jersey.
+    </string>
+    <string name="faq_title">Common questions about Volleyball</string>
+
 </resources>
