@@ -15,10 +15,12 @@ class VolleyballAdapter(private val volleyballList: MutableList<Preliminary>, pr
     class VolleyballAdapterViewHolder(view: View): RecyclerView.ViewHolder(view) {
         private val ivFlag: ImageView = view.findViewById(R.id.iv_volleyball_flag)
         private val tvTeamName: TextView = view.findViewById(R.id.tv_volleyball_teamName)
+        private val tvRankingNumber: TextView = view.findViewById(R.id.tv_volleyball_rankingNumber)
 
-        fun bindItem(preliminaryItem: Preliminary) {
-            tvTeamName.text = preliminaryItem.teamName
+        fun bindItem(preliminaryItem: Preliminary, position: Int) {
             Picasso.get().load(preliminaryItem.urlFlag).into(ivFlag)
+            tvTeamName.text = preliminaryItem.teamName
+            tvRankingNumber.text = "Top " + (position+1).toString()
         }
 
     }
@@ -37,7 +39,7 @@ class VolleyballAdapter(private val volleyballList: MutableList<Preliminary>, pr
     override fun onBindViewHolder(holder: VolleyballAdapterViewHolder, position: Int) {
         val item = volleyballList[position]
 
-        holder.bindItem(item)
+        holder.bindItem(item, position)
 
     }
 }

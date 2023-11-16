@@ -18,6 +18,7 @@ import com.example.volleyball.databinding.ActivityDashboardBinding
 import com.example.volleyball.fragments.DetailFaqFragment
 import com.example.volleyball.fragments.FaqFragment
 import com.example.volleyball.fragments.OptionsFragment
+import com.example.volleyball.fragments.RankingFragment
 import com.example.volleyball.fragments.RulesFragment
 import com.google.android.material.navigation.NavigationBarView
 
@@ -52,6 +53,10 @@ class DashboardActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedL
             }
             R.id.menu_btn_faq -> {
                 changeFragment(FaqFragment(), false)
+                true
+            }
+            R.id.menu_btn_ranking -> {
+                changeFragment(RankingFragment(), false)
                 true
             }
             else -> false

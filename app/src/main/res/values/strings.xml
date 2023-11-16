@@ -98,5 +98,7 @@
     <string name="faq_title">Common questions about Volleyball</string>
     <string name="options_changePwd">Allow notifications</string>
     <string name="permission_already_granted">Permission already granted</string>
+    <string name="search_dialog_title">Search teams by year</string>
+    <string name="search_dialog_btn">Search</string>
 
 </resources>

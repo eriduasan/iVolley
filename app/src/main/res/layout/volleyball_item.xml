@@ -3,14 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
     android:paddingTop="20dp"
     android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_volleyball_rankingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="24dp"
+        android:textSize="20sp"
+        style="@style/highlight_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Top 0" />
 
     <ImageView
         android:id="@+id/iv_volleyball_flag"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_volleyball_rankingNumber"
         app:layout_constraintLeft_toLeftOf="parent"
         />
 
@@ -18,7 +30,7 @@
         android:id="@+id/tv_volleyball_teamName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hola"
+        android:text="Team name"
         android:textSize="35sp"
         android:layout_marginLeft="20dp"
         app:layout_constraintLeft_toRightOf="@+id/iv_volleyball_flag"
