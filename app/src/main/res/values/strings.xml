@@ -101,4 +101,6 @@
     <string name="search_dialog_title">Search teams by year</string>
     <string name="search_dialog_btn">Search</string>
 
+    <string name="api_call_failed">Error getting the data :(</string>
+
 </resources>

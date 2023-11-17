@@ -15,6 +15,7 @@ import com.example.volleyball.clases.VolleyballResponse
 import com.example.volleyball.databinding.FragmentRankingBinding
 import com.example.volleyball.dialogs.SearchDialog
 import com.example.volleyball.interfaces.ApiInterface
+import com.google.android.material.snackbar.Snackbar
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -72,12 +73,16 @@ class RankingFragment : Fragment(), Callback<VolleyballResponse> {
         call: Call<VolleyballResponse>,
         response: Response<VolleyballResponse>
     ) {
-        val preliminary = response.body()?.data?.preliminary
+        try {
+            val preliminary = response.body()?.data?.preliminary
 
-        rankingList.clear()
-        rankingList.addAll(preliminary!!)
+            rankingList.clear()
+            rankingList.addAll(preliminary!!)
 
-        binding.rankingRecview.adapter = VolleyballAdapter(rankingList, requireContext())
+            binding.rankingRecview.adapter = VolleyballAdapter(rankingList, requireContext())
+        } catch (err: NullPointerException) {
+            Snackbar.make(binding.root, getString(R.string.api_call_failed), Snackbar.LENGTH_LONG).show()
+        }
     }
 
     override fun onFailure(call: Call<VolleyballResponse>, t: Throwable) {
