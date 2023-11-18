@@ -10,7 +10,7 @@ import androidx.activity.OnBackPressedDispatcher
 import com.example.volleyball.R
 import com.example.volleyball.databinding.FragmentAboutBinding
 
-class AboutFragment : Fragment(), View.OnClickListener {
+class AboutFragment : Fragment() {
 
     lateinit var binding: FragmentAboutBinding
 
@@ -20,14 +20,7 @@ class AboutFragment : Fragment(), View.OnClickListener {
     ): View? {
         binding = FragmentAboutBinding.inflate(inflater)
 
-        binding.btnGoBack.setOnClickListener(this)
-
         return binding.root
     }
-
-    override fun onClick(p0: View?) {
-        OnBackPressedDispatcher().onBackPressed().apply {  }
-    }
-
 
 }

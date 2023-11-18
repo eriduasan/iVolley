@@ -1,5 +1,6 @@
 package com.example.volleyball.fragments
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.volleyball.R
 import com.example.volleyball.adapters.VolleyballAdapter
@@ -24,7 +26,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RankingFragment : Fragment(), Callback<VolleyballResponse> {
 
-    private val BASE_URL = "https://5b6e-45-133-138-16.ngrok-free.app"
+    private val BASE_URL = "https://5de4-45-133-138-16.ngrok-free.app"
     lateinit var binding: FragmentRankingBinding
     private var rankingList = mutableListOf<Preliminary>()
 
@@ -36,10 +38,12 @@ class RankingFragment : Fragment(), Callback<VolleyballResponse> {
 
         binding = FragmentRankingBinding.inflate(inflater)
 
+        setRecyclerView()
         getVolleyballData()
 
-        binding.rankingRecview.adapter = VolleyballAdapter(rankingList, requireContext())
-        binding.rankingRecview.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        // binding.rankingRecview.adapter = VolleyballAdapter(rankingList, requireContext())
+        // binding.rankingRecview.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+
 
         val dialogFunction = { year: String ->
             getVolleyballData(year)
@@ -51,6 +55,24 @@ class RankingFragment : Fragment(), Callback<VolleyballResponse> {
 
 
         return binding.root
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+
+        setRecyclerView()
+
+    }
+
+    fun setRecyclerView() {
+
+        binding.rankingRecview.adapter = VolleyballAdapter(rankingList, requireContext())
+
+        if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            binding.rankingRecview.layoutManager = GridLayoutManager(requireContext(), 2)
+        } else {
+            binding.rankingRecview.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        }
     }
 
     private fun getRetrofit(url: String) : Retrofit {

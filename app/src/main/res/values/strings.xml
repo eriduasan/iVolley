@@ -92,5 +92,8 @@
     <string name="api_call_failed">Error getting the data :(</string>
     <string name="login_passwd">Password</string>
     <string name="login_user">Username</string>
+    <string name="intro_subtitle_landscape">Spike into the Volleyball Lifestyle.</string>
+    <string name="navigation_drawer_open">Drawer opened</string>
+    <string name="navigation_drawer_close">Drawer closed</string>
 
 </resources>

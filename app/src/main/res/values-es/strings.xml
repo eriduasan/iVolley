@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hello Volleyball</string>
+    <string name="app_name">Hello Voleibol</string>
     <string name="login">Iniciar sesión</string>
     <string name="activityMain_login">Iniciar sesión</string>
     <string name="activityMain_About">Acerca de iVolley</string>
@@ -15,10 +15,10 @@
     <string name="rules">Reglas</string>
     <string name="dashboard_toolbar_name">Panel de control</string>
     <string name="rules_volleyball_1">Solo 6 jugadores en la cancha en cualquier momento: 3 en la fila delantera y 3 en la fila trasera.  Los puntos se ganan en cada saque para el equipo ganador del rally (sistema de puntuación por rally).  Los jugadores no pueden golpear la pelota dos veces consecutivas (un bloqueo no se considera un golpe).  La pelota puede ser jugada fuera de la red durante un voleo y en un saque.  Una pelota que golpea la línea de límite está dentro.  Una pelota está fuera si golpea una antena, el suelo completamente fuera de la cancha, cualquiera de la red o cables fuera de la antena, el soporte o poste del árbitro, o el techo sobre una zona no jugable.  Es legal contactar la pelota con cualquier parte del cuerpo del jugador.  Es ilegal atrapar, sostener o lanzar la pelota.  Un jugador no puede bloquear o atacar un saque desde dentro o en la línea de 10 pies.  Después del saque, los jugadores de la línea delantera pueden cambiar de posición en la red.  Los partidos están compuestos por sets; la cantidad depende del nivel de juego.</string>
-    <string name="rules_title">Reglas del Volleyball</string>
-    <string name="rules_violation_title">Violaciones de reglas en Volleyball</string>
+    <string name="rules_title">Reglas del Voleibol</string>
+    <string name="rules_violation_title">Violaciones de reglas en Voleibol</string>
     <string name="rules_volleyball_2">Pisar o cruzar la línea de servicio al hacer un saque y entrar en contacto con la pelota.  No lograr pasar la pelota con éxito por encima de la red al realizar un saque.  Errores en el manejo de la pelota y contacto ilegal con la pelota (toques dobles, levantamientos, portar, lanzar, etc.).  Tocar la red con cualquier parte del cuerpo mientras la pelota está en juego.  Bloquear una pelota proveniente del campo del oponente y tocar la pelota al alcanzar sobre la red si tu oponente no ha utilizado 3 toques Y tiene un jugador listo para jugar la pelota.  Atacar una pelota proveniente del campo del oponente y tocar la pelota al alcanzar sobre la red cuando la pelota aún no ha cruzado el plano vertical de la red.  Cruzar la línea central de la cancha con cualquier parte de tu cuerpo, con la excepción de una mano o pie. Solo se considera una violación si toda la mano o todo el pie cruza completamente la línea central de la cancha.  Sacar fuera de rotación o fuera de orden.  Bloqueo de un jugador de la fila trasera (desviando una pelota proveniente del oponente) cuando, en el momento del contacto, el jugador de la fila trasera está cerca de la red y tiene parte de su cuerpo por encima de la parte superior de la red. Este es un bloqueo ilegal.  Jugador de la fila trasera atacando una pelota dentro de la zona delantera (el área dentro de la línea de 3 metros/10 pies) cuando, en el momento del contacto, la pelota está completamente por encima de la red. Este es un ataque ilegal.</string>
-    <string name="faq_volleyball_scoring_title">Como se puntua en Volleyball?</string>
+    <string name="faq_volleyball_scoring_title">Como se puntua en Voleibol?</string>
     <string name="faq_volleyball_scoring_body">
         El objetivo general del voleibol es que cada atleta utilice habilidades que impliquen que los equipos pasen una pelota por encima de la red sin que la pelota toque el suelo o salga fuera de los límites. Una pelota que cae en la línea se cuenta como dentro de los límites.
         \n\n
@@ -29,7 +29,7 @@
         Cada juego o equipo adicional que se puede usar es un set, un set se juega hasta alcanzar los 25 puntos y generalmente hay 3-5 sets en cada partido dependiendo del nivel, donde se aplican diferentes reglas.
     </string>
 
-    <string name="faq_what_to_wear_title">Como se viste para jugar Volleyball?</string>
+    <string name="faq_what_to_wear_title">Como se viste para jugar Voleibol?</string>
     <string name="faq_what_to_wear_body">
         Decidir qué ponerse depende de si estás jugando en interiores o exteriores, y competitivamente o simplemente por diversión.
         \n\n
@@ -55,7 +55,7 @@
         \n\n
         Por otro lado, un especialista defensivo puede rotar en lugar de cualquier jugador, se le permite saltar y atacar un golpe, y cuando se utiliza como sustituto sí cuenta contra las seis sustituciones permitidas por set para el equipo.
     </string>
-    <string name="faq_volleyball_positions_title">Que posiciones hay en el volleyball?</string>
+    <string name="faq_volleyball_positions_title">Que posiciones hay en el Voleibol?</string>
     <string name="faq_volleyball_positions_body">
         El voleibol tiene varias posiciones clave, cada una con sus propias responsabilidades. Las principales posiciones incluyen:
         \n\n
@@ -70,7 +70,7 @@
         5. Libero: Se especializa en habilidades defensivas y usa una camiseta de color diferente.
     </string>
 
-    <string name="faq_title">Preguntas freqüentes acerca de Volleyball</string>
+    <string name="faq_title">Preguntas freqüentes acerca de Voleibol</string>
     <string name="options_changePwd">Permitir notificaciones</string>
     <string name="permission_already_granted">Permisos otorgados correctamente</string>
     <string name="search_dialog_title">Buscar equipos por año</string>
@@ -78,4 +78,5 @@
     <string name="api_call_failed">Se ha producido un error con los datos :(</string>
     <string name="login_passwd">Contraseña</string>
     <string name="login_user">Usuario</string>
+    <string name="intro_subtitle_landscape">Sumérgete en el mundo del Voleibol</string>
 </resources>
