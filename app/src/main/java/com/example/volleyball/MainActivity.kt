@@ -1,5 +1,6 @@
 package com.example.volleyball
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.commit
@@ -11,7 +12,7 @@ import com.example.volleyball.fragments.AboutFragment
 import com.example.volleyball.fragments.IntroFragment
 import com.example.volleyball.fragments.LoginFragment
 
-class MainActivity : AppCompatActivity(), IntroFragment.onIntroFragmentButtonsClick {
+class MainActivity : AppCompatActivity(), IntroFragment.onIntroFragmentButtonsClick, LoginFragment.LoginInterface {
 
     lateinit var binding: ActivityMainBinding
 
@@ -37,6 +38,11 @@ class MainActivity : AppCompatActivity(), IntroFragment.onIntroFragmentButtonsCl
             setReorderingAllowed(true)
             replace<AboutFragment>(binding.fragmentContainerView.id)
         }
+    }
+
+    override fun changeActivity() {
+        val intent = Intent(this, DashboardActivity::class.java)
+        startActivity(intent)
     }
 
 }
