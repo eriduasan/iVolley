@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import com.example.volleyball.R
 import com.example.volleyball.databinding.FragmentIntroBinding
 
@@ -33,8 +35,14 @@ class IntroFragment : Fragment(), View.OnClickListener {
 
         binding = FragmentIntroBinding.inflate(inflater)
 
+        val views = listOf(binding.textView, binding.textView3, binding.imageView, binding.btnLogin, binding.btnAbout)
+
         binding.btnLogin.setOnClickListener(this)
         binding.btnAbout.setOnClickListener(this)
+
+        views.forEachIndexed { index, view ->
+            view?.startAnimation(getAnimation((index * 150 + 500).toLong(), 400))
+        }
 
         return binding.root
     }
@@ -44,6 +52,18 @@ class IntroFragment : Fragment(), View.OnClickListener {
             binding.btnLogin.id -> introInterface?.lauchLogin()
             binding.btnAbout.id -> introInterface?.lauchAbout()
         }
+    }
+
+    fun getAnimation( startOffset: Long, duration: Long): Animation {
+
+        val animation = AnimationUtils.loadAnimation(requireContext(), R.anim.fade_in_anim)
+
+        animation.startOffset = startOffset
+        animation.duration = duration
+        animation.fillAfter = true
+
+        return animation
+
     }
 
     interface onIntroFragmentButtonsClick {
